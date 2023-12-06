@@ -13,15 +13,28 @@ body {
 }
 
 header {
-    width: 100%;
-    height: 50px;
-    background-color: #1b1b32;
-    display: flex;
+	width: 100%;
+	height: 50px;
+	background-color: #1b1b32;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;    
+	position: fixed;
+	top: 0; 
 }
 
 h1 {
     color: #f1be32;
     font-size: min(5vw, 1.2em);
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    color: #f1be32;
+    font-size: min(5vw, 1.2em);
+    text-align: center;
+    padding-top: 25px;
 }
 
 nav {
@@ -57,3 +70,74 @@ h2 {
     border: 0;
 }
 
+p::before {
+    content: "Question #";
+}
+
+nav > ul > li {
+	color: #dfdfe2;
+	margin: 0 0.2rem;
+	padding: 0.2rem;
+	display: block;
+}
+
+li > a {
+    color: #dfdfe2;
+    text-decoration: none;
+}
+
+nav > ul > li:hover {   
+	background-color: #dfdfe2;
+	color: #1b1b32;
+	cursor: pointer;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+section {
+	width: 80%;
+	margin: 10px auto;
+	margin-top: 0;
+	max-width: 600px;
+}
+
+.info {
+    padding: 10px 0 0 5px;
+}
+
+.formrow {
+    margin-top: 30px;
+    padding: 0px 15px;
+}
+ 
+input {
+    font-size:14px;
+}
+
+.info > input {    /* target only the input elements within .info elements */
+    width: 50%;
+    text-align: left;
+}
+  
+.info > label, .info > input {
+    display: inline-block;    /* align the input boxes */
+    text-align: right;    /* align text to the right */
+}
+  
+.question {
+    border: none;
+    padding-bottom: 0;
+}
+  
+.answers-list {
+    list-style: none;    /* remove default styling for the list items (<li>->number in this case) */
+    padding: 0;
+}
