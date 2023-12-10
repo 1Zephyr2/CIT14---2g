@@ -19,7 +19,13 @@ section{
 
 div.tribute-info{
     text-align: center;
-    
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
 }
 
 ul{
@@ -28,8 +34,7 @@ ul{
     padding: 0;
     margin: 20px;
     line-height: 1.9;
-    list-style-position: inside;
-    
+    list-style-position: inside; 
 }
 
 main{
